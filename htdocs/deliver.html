@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>A&A </title>
+</head>
+ <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" type="text/css" href="page1.css">
+ <link rel="stylesheet" type="text/css" href="NavbarStyle.css">
+ <link rel="stylesheet" type="text/css" href="page2.css">
+ <link rel="stylesheet" type="text/css" href="Buttons.css">
+ <script type="text/javascript" src="pageWork.js"></script>
+  <body dir="rtl" align="center"  class="backgroundform">
+  
+		<div id="navbar">
+		 <a id="logo" onclick="progressHOME()" ><img src = "images/AA_RESTURANT.jpg " width ="100"/> 
+			<div id="navbar-right">
+                    <a class="active" href="http://localhost/index.html">דף הבית</a>  
+                    <a onclick="progressOrderChoosh()"> להזמנות</a>  
+                    <a onclick="progressMenu()">תפריט</a> 
+                    <a onclick="progresLocationss()"> מיקומי הסניפים  </a>                      
+                    <a onclick="progressClubMenbers()">הרשמה למועדון ההטבות</a>                           
+                    <a onclick="progressJobs()">דרושים לרשת המסעדות</a>
+                    <a onclick="progressUserManger()" >כניסת מנהל</a>
+                    <a onclick="progressFeedback()">מילוי משוב </a>
+			</div>
+		</div> 
+          <br><br><br><br><br><br>
+	     <br><br><br><br>
+          <div class="background">
+               <div class="text">
+                    <h1 class="h1"> משלוחים  </h1>                 
+                              <div>
+                              <form action="deliver.php" method="POST">
+                                   <h3 class="h3" ><strong>  אנא בחר סניף לביצוע משלוח  </h3></strong>
+                                   <br>
+                                   <select name= "city">
+                                        <option  name="city" value="כפר סבא "> כפר סבא</option>
+                                        <option  name="city" value=" ראש העין">ראש העין </option>
+                                        <option  name="city" value=" תל אביב ">תל אביב</option>
+                                   </select> 
+                              <table align="center" cellspacing="25" cellpadding="0" dir="rtl"> 
+                                        <tr>
+                                             <td><h4 class="h3">שם פרטי</h4></td> 
+                                             <td><h4 class="h3">שם משפחה</h4></td> 
+                                        </tr>
+                                        <tr>
+                                             <td><input type="text" name="firstName" placeholder="הזן את שמך" id="" required></td>
+                                             <td><input type="text" name="lastName" placeholder="הזן את שם המשפחה" required></td> 
+                                        </tr>
+                                   <tr>
+                                        <td><h4 class="h3">הזן כתובת מלאה</h4><br></td> 
+                                        <td><label  for="phone" class="h3"> הזן מספר טלפון </label>
+                                        </td> 
+                                   </tr>
+                                   <tr>
+                                        <td ><input type="text" name="addres" placeholder="הזן כתובת מלאה" required></td>
+                                        <td ><input required type="phone"  name="phone" placeholder="023-4567891" pattern="[0-9]{3}-[0-9]{7}" ></td> 
+                                   </tr>
+
+                                   <tr>
+                                        <td><label for="phone" class="h3" > הזן מספר טלפון נוסף להזמנה </label></td>  
+                                        <td><label for="email" class="h3" > הזן כתובת איימיל </label></td> 
+                                   </tr>
+                                   <tr>
+                                        <td > <input  required type="phone" id="phone1" name="phone1"  placeholder="123-4567890" pattern="[0-9]{3}-[0-9]{7}" ></td>
+                                        <td ><input required type="email" id="email" name="email" placeholder = "הכנס כתובת מייל"></td> 
+                                   </tr>
+
+                                   <tr>
+                                        <td><label  for="appt" class="h3" min="12:00" max="18:00" > שעת ההגעה הרצויה </label></td>  
+                                        <td><h4 class="h3" > הערות להזמנה</h4></td><br><br> 
+                                   </tr>
+                                   <tr>
+                                        <td><input type="time" id="appt" name="appt" ></td><br><br>
+                                        <td><textarea name="details" id="details" style="height:100px" placeholder="הזן בקשות מיוחדות"></textarea></td>
+                                   </tr>                 
+                              </table>   
+                         <button type="submit" class="all_buttons" style="font-weight: bold;color: black;">המשך לבחירת מנות </button> 
+                         
+                              </form><br>
+               </div>
+          </div>
+                    
+                         
+  </body>
+</html>

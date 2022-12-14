@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title> A&A </title>
+</head>
+ <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" type="text/css" href="page1.css">
+ <link rel="stylesheet" type="text/css" href="NavbarStyle.css">
+ <link rel="stylesheet" type="text/css" href="page2.css">
+ <link rel="stylesheet" type="text/css" href="Buttons.css">
+ <script type="text/javascript"  src="pageWork.js"></script></script>
+  <body dir="rtl" align="center" class="backgroundform">  
+
+		<div id="navbar">
+		 <a id="logo" onclick="progressHOME()" ><img src = "images/AA_RESTURANT.jpg " width ="100"/> 
+			<div id="navbar-right">
+				<a class="active" href="http://localhost/index.html">דף הבית</a>  
+				<a onclick="progressOrderChoosh()"> להזמנות</a>  
+				<a onclick="progressMenu()">תפריט</a> 
+				<a onclick="progresLocationss()"> מיקומי הסניפים  </a>                      
+				<a onclick="progressClubMenbers()">הרשמה למועדון ההטבות</a>                           
+				<a onclick="progressJobs()">דרושים לרשת המסעדות</a>
+				<a onclick="progressUserManger()" >כניסת מנהל</a>
+			</div>
+		</div>    
+	<br><br><br><br><br><br>
+	<br><br><br>
+    <form action="feedback.php.php" method="POST">
+		<div class="background">
+			<div class="text">
+				<h1 class="h1">  מילוי משוב על A&A  </h1>
+				<br>
+
+			<h3 class="h2" style = "color:red" ><strong> **המשוב נעשה באופן אנונימי לחלוטין </h3></strong> 
+			<br>
+		</div>
+	</div>
+	<div class="background">
+		<div class="text">
+					<h2 class="h3" style = "color:gold" ><strong> אנא בחר סניף רצוי למילוי המשוב </h2></strong> 
+					<br>			
+					<select name="city" >
+						<option name="city" value="כפר סבא "> כפר סבא</option>
+						<option name="city" value=" ראש העין">ראש העין </option>
+						<option name="city" value="תל אביב">תל אביב</option>
+					</select >  
+					<br><br><br>
+					<h2 class="h3" style = "color:gold" ><strong> סוג השירות שניתן </h2></strong> 
+					<br><br>
+					<select name="city" >
+						<option for="TA"  id="TA" name="service" value="איסוף עצמי">איסוף עצמי </option>
+						<option for="Deliver" id="Deliver" name="service" value="משלוח"> משלוח</option>
+						<option for="sit" id="sit" name="service" value="ישיבה במסעדה"> ישיבה במסעדה </option>
+					</select>  
+				
+					<br><br><br><br><br><br>
+				<table border = "1" bgcolor = "black"  align="center">
+					<tr bgcolor = "white" >
+					<td colspan = "6" center style ="color:gold" bgcolor = "black"><b><strong><center> טופס מילוי משוב  </center></td> </b></strong>
+					</tr>
+					
+						<tr style = "color:gold">
+							<th> שביעות רצון כללית </th> 
+							<th> איכות הארוחה </th>
+							<th> זמן ההמתנה  </th>
+							<th> חווית השירות </th>			
+						</tr>  
+					<tr>
+						<td><select name="GeneralSatisfaction">
+								<option name="GeneralSatisfaction" value="טעון שיפור">טעון שיפור</option>
+								<option name="GeneralSatisfaction" value="ספיק בקושי">מספיק בקושי</option>
+								<option name="GeneralSatisfaction" value="טוב">טוב</option>
+								<option name="GeneralSatisfaction" value="טוב מאוד">טוב מאוד</option>
+								<option name="GeneralSatisfaction" value="מצווין">מצווין</option>
+						</td></select>
+						<td><select name="QualityMeal" >
+								<option name="QualityMeal" value="טעון שיפור">טעון שיפור</option>
+								<option name="QualityMeal" value="מספיק בקושי">מספיק בקושי</option>
+								<option name="QualityMeal" value="טוב">טוב</option>
+								<option name="QualityMeal" value="טוב מאוד">טוב מאוד</option>
+								<option name="QualityMeal" value="מצווין">מצווין</option>
+						</td></select>
+						<td><select name="WaitingTime">
+								<option name="WaitingTime" value="טעון שיפור">טעון שיפור</option>
+								<option name="WaitingTime" value="מספיק בקושי">מספיק בקושי</option>
+								<option name="WaitingTime" value="טוב">טוב</option>
+								<option name="WaitingTime" value="טוב מאוד">טוב מאוד</option>
+								<option name="WaitingTime" value="מצווין">מצווין</option>
+						</td></select>
+						<td><select name="ServiceExperience">
+								<option name="ServiceExperience" value="טעון שיפור">טעון שיפור</option>
+								<option name="ServiceExperience" value="מספיק בקושי">מספיק בקושי</option>
+								<option name="ServiceExperience" value="טוב">טוב</option>
+								<option name="ServiceExperience" value="טוב מאוד">טוב מאוד</option>
+								<option name="ServiceExperience" value="מצווין">מצווין</option>
+						</td></select>		
+					</tr>  
+					</div>
+				</table>
+			<br><br>
+				<h3 style = "color:gold" ><strong> נשמח גם לתגובה אישית על החוויה :) </h3></strong>
+				<textarea  rows="5" name="textarea1"></textarea>
+			<br><br>
+
+			<a href="http://localhost/index.html" class="all_buttons1"  type="submit"  onclick="GoHome()">שלח משוב </a>
+			<br><br><br><br>
+		</div>
+	</div>
+	</form>
+	
+  </body>
+</html>

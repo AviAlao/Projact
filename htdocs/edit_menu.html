@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title> A&A </title>
+</head>
+ <script type="text/javascript" src="pageWork.js"></script>
+ <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" type="text/css" href="Buttons.css">
+ <link rel="stylesheet" type="text/css" href="page1.css">
+ <link rel="stylesheet" type="text/css" href="NavbarStyle.css">
+ <link rel="stylesheet" type="text/css" href="page2.css">
+  <body align="center" dir="rtl" class="backgroundform" >
+
+		<div id="navbar">
+		<a id="logo" onclick="progressHOME()" ><img src = "images/AA_RESTURANT.jpg " width ="100"/> 
+			<div id="navbar-right">
+				<a class="active" href="http://localhost/index.html">דף הבית</a>  
+				<a onclick="progressOrderChoosh()"> להזמנות</a>  
+				<a onclick="progressMenu()">תפריט</a> 
+				<a onclick="progresLocationss()"> מיקומי הסניפים  </a>                      
+				<a onclick="progressClubMenbers()">הרשמה למועדון ההטבות</a>                           
+				<a onclick="progressJobs()">דרושים לרשת המסעדות</a>
+				<a onclick="progressUserManger()" >כניסת מנהל</a>
+				<a onclick="progressFeedback()">מילוי משוב </a>
+			</div>
+		</div>   
+		<br><br><br><br><br><br>
+		<br><br><br><br><br><br> 
+		<div class="background">
+			<div class="text">
+				<form name="input" action="delete_Menu.php" method="POST">
+					<h1 class="h1">  מסך המנהל A&A  </h1> 
+					<h3 class="h2"  > **אנא הקפד למלא פרטים כראוי** </h3> <br><br>
+			</div>
+		</div>
+		<div class="background">
+			<div class="text">
+				
+						<h2 class="p2" style = "color: gold"> הסרת מנה מהתפריט </h2>
+						<br>
+							<input type="text" name="mkt" placeholder="מספר סידורי" id="mkt" >
+							<br><br><br>
+							<a href="http://localhost/edit_menu.html" type="submit" class="all_buttons1" onclick="delete_manger()"> הסרת מנה מהתפריט</a>
+							<br><br><br>
+				</form>			
+			</div>
+		</div>
+		<div class="background">
+			<div class="text">
+				<form  action="Insert_name_menu.php" method="POST">
+					<h2 class="h2"> הוספת מנה לתפריט  </h2>
+						<td><h3 class="p1"> שם המנה </h3></td>
+						</tr>
+						<tr>
+						<td><input type="text" placeholder="שם המנה" name ="NameMeal"  required ></td> 
+						</tr>
+					<h3 class="p1">מחיר המנה</h3>				
+						<tr>
+							<td><input type="num" placeholder="הזן את מחיר המנה " name="PriceMeal" required></td> 
+						</tr>
+					<h3 class="p1">מספר סידורי </h3>
+						<td><input  type="text" placeholder="Mkt" name="MktMeal" required></td> 
+					<h4 class="p1"> תיאור המנה </h4>
+							<textarea  name="DescriptionMeal" id="DescriptionMeal"  required> </textarea>
+							<br><br>
+							<a href="http://localhost/edit_menu.html" type="submit" class="all_buttons1"  onclick="add_menu_manger()">הוספת מנה לתפריט </a>
+
+					<br><br>
+				</form>
+			</div>
+		</div>
+		<div class="background">
+			<div class="text">	
+				<form name="input" action="updateMenu.php" method="POST">
+						<h2 class="h2"> עדכון מנה בתפריט </h2>
+						<h3 class="p1"> הזן את המספר הסידורי לצורך עריכה</h3>	
+							<input type="text" name="mktUP" placeholder="הזן את ה - Mkt" id="mkt" >	
+							<br>			 
+						<td><h3 class="p1"> שם המנה </h3></td>
+							<tr>
+							<td><input type="text" placeholder="שם המנה" name = "NameMealUP"   ></td> 
+							</tr>
+						<h3 class="p1">מחיר המנה</h3>				
+							<tr>
+								<td><input type="num" placeholder="הזן את מחיר המנה " name="PriceMealUP" ></td> 
+							</tr>
+						<h4 class="p1"> תיאור המנה </h4>
+							<textarea  type="details" placeholder=" הזן את תיאור המנה " style="color: black;"> </textarea>
+							<br><br><br>
+							<a href="http://localhost/edit_menu.html" type="submit" class="all_buttons1" onclick=" update_manger()"> עדכון מנה בתפריט</a>
+							<br>
+					<br><br>
+				</form>
+			</div>
+		</div>
+  </body>
+</html>

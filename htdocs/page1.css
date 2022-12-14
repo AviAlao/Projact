@@ -1,0 +1,191 @@
+    * {
+    box-sizing: border-box;
+  }
+  #videoBG {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+  }
+  #videoBG video{
+    height: 100vh;
+    width: 100%;
+    background-position: absoulute;
+    z-index: 10;
+    object-fit: cover;
+
+  }
+  @media (min-aspect-ratio: 16/9) {
+    #videoBG {
+        width:100%;
+        height: auto;
+    }
+  }
+  @media (max-aspect-ratio: 16/9) {
+    #videoBG { 
+        width:auto;
+        height: 100%;
+    }
+  }
+  @media (max-width: 767px) {
+    #videoBG {
+        display: none;
+    }
+  }
+  body{
+    padding: auto;
+    size: 80%;
+  } 
+
+
+/* select opsions */
+/* The container must be positioned relative: */
+  .custom-select {
+    position: static;
+    font-family: Arial;
+    font-size: bold;
+  }
+  
+  .custom-select select {
+    display: none; /*hide original SELECT element: */
+  }
+  
+  .select-selected {
+    background-color: DodgerBlue;
+  }
+  
+  /* Style the arrow inside the select element: */
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 10;
+    height: 10;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+  
+  /* Point the arrow upwards when the select box is open (active): */
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+  }
+  
+  /* style the items (options), including the selected item: */
+  .select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+  }
+  
+  /* Style items (options): */
+  .select-items {
+    position: absolute;
+    background-color: DodgerBlue;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  /* Hide the items when the select box is closed: */
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  } 
+
+  
+
+  /*photo gallery home page*/
+  .wrapper {
+    position: relative;
+    flex-grow: 1;
+    margin: auto;
+    max-width: 1200px;
+    max-height: 1200px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 2vmin;
+    justify-items: top;
+    align-items: center;
+  }
+
+  .photogallery {
+    z-index: 1;
+    grid-column: span 2;
+    max-width: 100%;
+    margin-bottom: -52%;
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    transform: scale(1);
+    transition: all 0.25s;
+  }
+  .photogallery:nth-child(7n+1) {
+    grid-column: 2/span 2;
+  }
+  .photogallery:hover {
+    z-index: 2;
+    transform: scale(2);
+  }
+  #table2{
+    margin-right: 590px;
+    margin-top: -100px;
+ }
+ #table1{
+   margin: auto;
+ }
+ #table3{
+   margin: auto;
+   
+ }
+ #input1{
+  font-size: 30px; 
+  color: gold; 
+  font-weight: bold;
+}
+#input2{
+  font-size: 35px; 
+  color: white; 
+  font-weight: bold;
+
+}
+#video{
+  margin-left: 32%;
+  margin-top:  30px;
+
+}
+.backgroundform{
+  background-image: url("images/resturant_backgroud6.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.img{
+  box-shadow: 20px 14px 33px 7px rgba(0,0,0,0.75);
+}
+.background {
+  position: center;
+  max-width: 1000px; /* Maximum width */
+  margin:  0 auto; /* Center it */
+  max-height: fit-cntent;
+}
+.background .text {
+  background: rgb(45, 45, 45); /* Fallback color */
+  background: rgba(38, 38, 38, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  border-radius: 116px 119px 144px 141px;
+
+}
+

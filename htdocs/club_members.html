@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title> A&A </title>
+</head>
+ <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" type="text/css" href="page1.css">
+ <link rel="stylesheet" type="text/css" href="NavbarStyle.css">
+ <link rel="stylesheet" type="text/css" href="page2.css">
+ <link rel="stylesheet" type="text/css" href="Buttons.css">
+ <link href='https://fonts.googleapis.com/css?family=Architects Daughter' rel='stylesheet'>
+ <script type="text/javascript"  src="pageWork.js"></script>
+  <body dir="rtl"> 
+      <video id="videoBG" poster="poster.JPG" autoplay muted loop>
+         <source src="pexels-kampus-production-8626675.mp4" type="video/mp4">
+      </video>   
+         <div id="navbar">
+         <a id="logo" onclick="progressHOME()" ><img src = "images/AA_RESTURANT.jpg " width ="100"/> 
+            <div id="navbar-right">
+               <a class="active" href="http://localhost/index.html">דף הבית</a>  
+               <a onclick="progressOrderChoosh()"> להזמנות</a>  
+               <a onclick="progresLocationss()"> מיקומי הסניפים </a> 
+               <a onclick="progressMenu()">תפריט</a>           
+               <a onclick="progressJobs()">דרושים לרשת המסעדות</a>
+               <a onclick="progressUserManger()" >כניסת מנהל</a>
+               <a onclick="progressFeedback()">מילוי משוב </a>
+            </div>
+         </div>    
+         <br><br><br><br><br><br>
+         <br><br><br>
+         <h1 class="h1">עמוד הרשמה למועדון הטבות </h1>
+         <div align="center">
+            <table cellspacing="25" cellpadding="0" >
+               <form action="InsertNewUser.php" method="POST">
+                  <tr>
+                     <td><h3 class="h3"> שם מלא </h3></td>
+                     <td><h3 class="h3" >תעודת זהות</h3></td>
+                  </tr>
+                  <tr>
+                     <td><input type="text" placeholder="שם מלא" name = "userName"  required ></td> 
+                     <td><input type="num" placeholder="אנא הזן תעודת זהות " name= "userIdName" required></td> 
+                  </tr>
+                  <tr>
+                  <tr>
+                     <td><h3 class="h3" >אנא הזן מספר טלפון</h3></td>
+                     <td><h3 class="h3" >אימייל</h3></td>
+                  </tr>
+                  <tr>
+                     <td><input type="num" placeholder="אנא הזן תעודת זהות " name= "userIdName" required></td>
+                     <td><input type="email" placeholder="אנא הזן כתובת מייל" name="userEmail"required ></td>  
+                  </tr>
+
+                     <td><h3 class="h3" >סיסמא</h3></td>
+                  </tr>
+                  <tr>        
+                     <td><input type="password" id="userpassword" placeholder="אנא הזן סיסמא" name ="userPassword" required></td>
+                     
+                  </tr>
+                  <tr>
+                     <td>
+                        <label class="container" id="input1" >
+                           <input  class="h3" type="checkbox" value= "ראה סיסמא " onclick="show_password()"  name="title" required> ראה סיסמא</input>
+                        <span class="checkmark"></span>
+                     </td>
+                  </tr>
+                  <td><br><br>
+                     <button type="submit" class="all_buttons"  onclick="club_members1()" >הרשם</button> </td>
+                  </tr>
+               </form>	
+            </table>
+         </div>
+  </body>
+</html>
